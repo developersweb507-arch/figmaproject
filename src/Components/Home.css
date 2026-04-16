@@ -1,0 +1,27 @@
+.main-div{
+height: 95vh;
+width: 100%;
+margin-top: 5%;
+  display: flex;
+  justify-content: space-evenly;
+
+
+}
+
+
+
+img{
+
+    width: 300px;
+}
+
+.cardstyle{
+
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.082);
+}
+
+h1{
+    text-align: center;
+}
+
