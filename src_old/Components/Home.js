@@ -19,6 +19,9 @@ function Home() {
       { name: 'Love Again', age: 26, url: IMG4 , genre:' Bollwood '},
       { name: 'Adam 65', age: 24, url: IMG5, genre:' SouthMovie ' }]
 
+
+
+
    const navigate = useNavigate()
    function handlechange(user) {
    navigate('/header', { state: [user] })
@@ -27,7 +30,8 @@ function Home() {
 
    const [viewoutput, setView] = useState(data)
 
-   function handleChange(usedata){
+
+   function handlefilter(usedata){
 
    const filterData = data.filter(i=>(i.name.includes(usedata.target.value)) || (i.genre.includes(usedata.target.value)))
       setView(filterData)
@@ -41,7 +45,7 @@ function Home() {
       <div>
 
          <h1 >HD Movie</h1>
-         <Input placeholder='search Movies' onChange={handleChange} style={{ width: '800px', marginLeft: "500px ", height: "40px" }}></Input>
+         <Input placeholder='search Movies' onChange={handlefilter} style={{ width: '800px', marginLeft: "500px ", height: "40px" }}></Input>
 
          <div className='main-div'>
 
